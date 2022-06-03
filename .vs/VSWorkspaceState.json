@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\project_update-master",
+    "\\project_update-master\\project_update-master",
+    "\\project_update-master\\project_update-master\\Project1",
+    "\\project_update-master\\project_update-master\\Project1\\Activities",
+    "\\project_update-master\\project_update-master\\Project1\\Activities\\Study",
+    "\\project_update-master\\project_update-master\\Project1\\Activities\\Study\\Xamarin",
+    "\\project_update-master\\project_update-master\\Project1\\Fragment",
+    "\\project_update-master\\project_update-master\\Project1\\Resources",
+    "\\project_update-master\\project_update-master\\Project1\\Resources\\anim"
+  ],
+  "SelectedNode": "\\project_update-master\\project_update-master\\Project1\\Fragment\\EnglishFragment.cs",
+  "PreviewInSolutionExplorer": false
+}

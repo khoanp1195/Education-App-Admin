@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <ImageView
+            android:src="@drawable/back2"
+            android:id="@+id/imgback"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+       
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:elevation="4dp"
+      
+        android:background="@drawable/round_corner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="BEST SCORE"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" 
+       />
+        <ListView
+            android:id="@+id/lstView"
+            android:layout_below="@+id/txtTitle"
+            android:layout_marginTop="10dp"
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+       />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

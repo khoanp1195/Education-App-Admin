@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout1"
+    android:background="@color/background1"
+    android:layout_width="match_parent"
+    
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+         <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar1"
+        android:background="@drawable/background"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp"    >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="User Ranking"
+                android:textStyle="bold"
+                android:fontFamily="@font/doan"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+            <ImageView
+                android:id="@+id/searchButton"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/search"
+                android:tint="#fff"
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/back2"
+                android:tint="#fff"
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+
+         
+
+
+        </RelativeLayout>
+
+     </android.support.v7.widget.Toolbar>
+           <EditText
+        android:hint="Search"
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/searchText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:minHeight="90dp"
+            android:id="@+id/cardView1"
+            app:cardElevation="12dp"
+            app:cardCornerRadius="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView1"
+                    android:scrollbars="vertical"
+
+                    android:background="@color/browlow"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
